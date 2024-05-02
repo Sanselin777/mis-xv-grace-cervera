@@ -63,9 +63,8 @@ const Footer = () => {
     "Doa Restu Anda merupakan karunia yang sangat berarti bagi kami.";
   const berbahagia = "Kami Yang Berbahagia";
 
-  const { title, message, warning, thanks, greetings, urlForm } = useDB(
-    (db) => db.party.confirmation
-  );
+  const { confirmation, father, mother } = useDB((db) => db.party);
+  const { title, warning, thanks, greetings, urlForm } = confirmation;
 
   return (
     <Box
@@ -124,33 +123,44 @@ const Footer = () => {
                 Confirmar Asistencia
               </Button>
             </CardActions>
-            <Typography
-              variant="h4"
-              sx={{ textAlign: "center", fontFamily: "Arizonia" }}
-            >
-              {doaRestu.split(" ").map((text, key) => (
+            <Typography variant="h4" sx={{ textAlign: "center" }}>
+              {warning.split(" ").map((text, key) => (
+                <TextMask key={key} variants={textVariants}>
+                  {text}
+                </TextMask>
+              ))}
+            </Typography>
+            <Typography variant="h4" sx={{ textAlign: "center", mt: "2rem" }}>
+              {thanks.split(" ").map((text, key) => (
+                <TextMask key={key} variants={textVariants}>
+                  {text}
+                </TextMask>
+              ))}
+            </Typography>
+            <Typography variant="h4" sx={{ textAlign: "center", mt: "2rem" }}>
+              {greetings.split(" ").map((text, key) => (
                 <TextMask key={key} variants={textVariants}>
                   {text}
                 </TextMask>
               ))}
             </Typography>
           </Grid>
-
-          {/* Mempelai man */}
           <Grid item md={6} xs={12}>
             <KeluargaBesar
+              parent={father.parent}
               title="Mempelai Pria"
-              orangTuaPria={man.parent.man}
-              orangTuaWanita={man.parent.woman}
+              firstName={father.firstName}
+              lastName={father.lastName}
             />
           </Grid>
 
           {/* Mempelai woman */}
           <Grid item md={6} xs={12} sx={{ mt: { md: 0, xs: 5 } }}>
             <KeluargaBesar
+              parent={mother.parent}
               title="Mempelai Wanita"
-              orangTuaPria={woman.parent.man}
-              orangTuaWanita={woman.parent.woman}
+              firstName={mother.firstName}
+              lastName={mother.lastName}
             />
           </Grid>
         </Grid>

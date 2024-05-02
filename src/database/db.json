@@ -11,11 +11,13 @@
     },
     "father": {
       "firstName": "Raúl",
-      "lastName": "Cervera"
+      "lastName": "Cervera",
+      "parent": "Padre de la quinceañera"
     },
     "mother": {
       "firstName": "Beatriz",
-      "lastName": "Hernández"
+      "lastName": "Hernández",
+      "parent": "Madre de la quinceañera"
     },
     "galery": {
       "date": "/assets/images/grace-ga-webp/03.webp"
@@ -44,7 +46,7 @@
     "confirmation": {
       "title": "Asistencia",
       "message": "Confirma tu asistencia dando click en el siguiente enlace",
-      "warning": "Fecha máxima de confirmación 15 mayo 2024",
+      "warning": "Fecha máxima de confirmación 15 mayo 2024!!!",
       "thanks": "Gracias!! No te olvides de orar por mi!!",
       "greetings": "Nos vemos en pocos días 🥳",
       "urlForm": "https://forms.gle/oLsRNjJy3wmvzDeB9"
