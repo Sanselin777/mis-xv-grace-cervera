@@ -95,7 +95,7 @@ const CardTanggal = ({
       whileInView="show"
       exit="exit"
       viewport={{ once: true }}
-      sx={{ borderRadius: 0 }}
+      sx={{ borderRadius: 0, height: "100%" }}
     >
       <CardContent
         sx={{
