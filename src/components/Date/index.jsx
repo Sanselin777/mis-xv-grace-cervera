@@ -48,8 +48,21 @@ const Date = () => {
   const { reception, galery } = useDB((db) => db.party);
 
   return (
-    <Container sx={{ py: 15, backgroundColor: "text.primary" }}>
-      <Grid container spacing={5}>
+    <Box
+      sx={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        minHeight: "100vh",
+        backgroundColor: "text.primary",
+        overflow: "hidden",
+        py: {
+          md: 30,
+          xs: 15,
+        },
+      }}
+    >
+      <Grid container spacing={5} sx={{ px: { md: 40, xs: 1 } }}>
         <Grid
           item
           xs={12}
@@ -119,7 +132,7 @@ const Date = () => {
           />
         </Grid>
       </Grid>
-    </Container>
+    </Box>
   );
 };
 
