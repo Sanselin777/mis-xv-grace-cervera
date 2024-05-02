@@ -20,18 +20,8 @@
     "galery": {
       "date": "/assets/images/grace-ga-webp/03.webp"
     },
-    "contract": {
-      "date": "Senin, 15 Mei 2023",
-      "hour": "08.00 WIB - Selesai",
-      "location": "Kediaman bride woman",
-      "address": "Jl. H. Nurleman RT. 002 RW. 003, Kel. Benda Baru, Kec. Pamulang, Tangerang Selatan",
-      "maps": {
-        "link": "https://maps.app.goo.gl/QnvcYHWXwU3wbLER8",
-        "iframeSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5985.8693217698765!2d-77.14892528318747!3d-11.875153682700176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d3a26b20024f%3A0xe76c50fd407651a2!2sHOTEL%20BUNGALOW%20JATUM%20MAMA!5e0!3m2!1ses-419!2spe!4v1714595632207!5m2!1ses-419!2spe"
-      }
-    },
     "reception": {
-      "date": "01 de Junio, 2024",
+      "date": "Sábado, 01 de Junio, 2024",
       "hour": "07:30 pm",
       "location": "Local campestre Jatun Mama",
       "address": "Av. La Playa mz.d Lt.7 Cooperativa Ecológica Apurimac, Ventanilla",
@@ -41,6 +31,23 @@
       },
       "secondaryMessage": "👗 👔 Elegante Te esperamos !!!",
       "notKidsMessage": "Niños en pijamada descansado en casa ☺️"
+    },
+    "gifts": {
+      "title": "Regalos",
+      "message": "Contar con tu presencia es una bendición!! Y si deseas bendecirme con obsequio, mejor hazlo a través de Yape o Plin!!  O número de cuenta, Y así te ahorras el dolor de cabeza 🤕 de no saber qué regalarme 🤭 (987954353)",
+      "account1": "Mi número de cuenta BCP Soles es 30500888307066",
+      "account2": "Mi número de cuenta interbancaria es 00230510088830706618",
+      "accountOwner": "Beatriz Edelmira Hernández Rodríguez",
+      "bg": "rgb(213, 206, 163)",
+      "picture": "/assets/images/grace-ga-webp/01.webp"
+    },
+    "confirmation": {
+      "title": "Asistencia",
+      "message": "Confirma tu asistencia dando click en el siguiente enlace",
+      "warning": "Fecha máxima de confirmación 15 mayo 2024",
+      "thanks": "Gracias!! No te olvides de orar por mi!!",
+      "greetings": "Nos vemos en pocos días 🥳",
+      "urlForm": "https://forms.gle/oLsRNjJy3wmvzDeB9"
     },
     "bride": {
       "man": {
@@ -76,11 +83,10 @@
     "/assets/images/grace-ga-webp/01.webp",
     "/assets/images/grace-ga-webp/02.webp",
     "/assets/images/grace-ga-webp/04.webp",
+    "/assets/images/grace-ga-webp/07.webp",
     "/assets/images/grace-ga-webp/05.webp",
     "/assets/images/grace-ga-webp/06.webp",
-    "/assets/images/grace-ga-webp/07.webp",
     "/assets/images/grace-ga-webp/08.webp",
-    "/assets/images/grace-ga-webp/09.webp",
     "/assets/images/grace-ga-webp/12.webp"
   ]
 }

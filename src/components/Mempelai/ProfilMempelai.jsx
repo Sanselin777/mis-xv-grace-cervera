@@ -1,9 +1,10 @@
 import { transition, parentVariants } from "@/animation/transition";
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, Container, Grid, Typography, CardContent } from "@mui/material";
 import { motion } from "framer-motion";
-import PropTypes from "prop-types";
 import React from "react";
 import TextMask from "../TextMask";
+import { iconVariants } from "../Date/CardTanggal";
+import CardGiftcardTwoToneIcon from "@mui/icons-material/CardGiftcardTwoTone";
 
 const fotoVariants = {
   hidden: {
@@ -44,11 +45,11 @@ const textVariants = {
  * @param {object} props
  * @returns React.ReactElement
  */
-const ProfilMempelai = ({ bride }) => {
-  const { firstName, lastName, parent } = bride;
+const ProfilMempelai = ({ info }) => {
+  const { title, message, account1, account2, accountOwner, bg, picture } =
+    info;
 
-  const namaLengkap = `${firstName} ${lastName}`;
-  const namaOrangTua = `Bpk. ${parent.man} & Ibu. ${parent.woman}`;
+  const showOwner = `(${accountOwner})`;
 
   return (
     <Grid
@@ -56,7 +57,7 @@ const ProfilMempelai = ({ bride }) => {
       spacing={0}
       justifyContent="center"
       alignItems="center"
-      sx={{ backgroundColor: bride.bg }}
+      sx={{ backgroundColor: "text.secondary" }}
     >
       <Grid
         component={motion.div}
@@ -72,54 +73,105 @@ const ProfilMempelai = ({ bride }) => {
         sx={{
           py: 10,
           minHeight: { md: "100vh", xs: 300 },
-          backgroundColor: bride.bg,
+          backgroundColor: bg,
           display: "flex",
           alignItems: "center",
         }}
       >
         <Container>
-          <Typography
-            color="text.secondary"
-            variant="h3"
-            component="h2"
+          <CardContent
             sx={{
-              mb: 4,
-              textAlign: "center",
-              fontSize: { md: "5em" },
+              pt: 5,
+              px: 4,
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
             }}
           >
-            {namaLengkap.split(" ").map((text, key) => (
-              <TextMask key={key} variants={textVariants}>
-                {text}
-              </TextMask>
-            ))}
-          </Typography>
+            <Box
+              component={motion.div}
+              variants={iconVariants}
+              sx={{
+                border: 2,
+                borderColor: "text.secondary",
+                borderRadius: "50%",
+                width: 100,
+                height: 100,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                mt: 3,
+              }}
+            >
+              <CardGiftcardTwoToneIcon
+                sx={{ fontSize: 70, color: "text.secondary" }}
+              />
+            </Box>
+            <Typography
+              color="text.secondary"
+              variant="h3"
+              component="h2"
+              sx={{
+                mb: 4,
+                textAlign: "center",
+                fontSize: { md: "5em" },
+              }}
+            >
+              {title.split(" ").map((text, key) => (
+                <TextMask key={key} variants={textVariants}>
+                  {text}
+                </TextMask>
+              ))}
+            </Typography>
 
-          <Typography
-            color="text.secondary"
-            variant="h6"
-            component="div"
-            sx={{ mb: 4, textAlign: "center" }}
-          >
-            {parent.information.split(" ").map((text, key) => (
-              <TextMask key={key} variants={textVariants}>
-                {text}
-              </TextMask>
-            ))}
-          </Typography>
+            <Typography
+              color="text.secondary"
+              variant="h5"
+              component="div"
+              sx={{ mb: 4, textAlign: "center" }}
+            >
+              {message.split(" ").map((text, key) => (
+                <TextMask key={key} variants={textVariants}>
+                  {text}
+                </TextMask>
+              ))}
+            </Typography>
 
-          <Typography
-            color="text.secondary"
-            variant="h5"
-            component="div"
-            sx={{ textAlign: "center" }}
-          >
-            {namaOrangTua.split(" ").map((text, key) => (
-              <TextMask key={key} variants={textVariants}>
-                {text}
-              </TextMask>
-            ))}
-          </Typography>
+            <Typography
+              color="text.secondary"
+              component="div"
+              sx={{ textAlign: "center" }}
+            >
+              {account1.split(" ").map((text, key) => (
+                <TextMask key={key} variants={textVariants}>
+                  {text}
+                </TextMask>
+              ))}
+            </Typography>
+
+            <Typography
+              color="text.secondary"
+              component="div"
+              sx={{ textAlign: "center" }}
+            >
+              {account2.split(" ").map((text, key) => (
+                <TextMask key={key} variants={textVariants}>
+                  {text}
+                </TextMask>
+              ))}
+            </Typography>
+            <Typography
+              color="text.secondary"
+              component="div"
+              sx={{ textAlign: "center" }}
+            >
+              {showOwner.split(" ").map((text, key) => (
+                <TextMask key={key} variants={textVariants}>
+                  {text}
+                </TextMask>
+              ))}
+            </Typography>
+          </CardContent>
         </Container>
       </Grid>
 
@@ -138,13 +190,12 @@ const ProfilMempelai = ({ bride }) => {
       >
         <Box
           component={motion.img}
-          alt={namaLengkap}
           variants={fotoVariants}
           initial="hidden"
           whileInView="show"
           exit="exit"
           viewport={{ once: true }}
-          src={bride.foto}
+          src={picture}
           sx={{
             width: "100%",
             height: "100%",
@@ -155,10 +206,6 @@ const ProfilMempelai = ({ bride }) => {
       </Grid>
     </Grid>
   );
-};
-
-ProfilMempelai.propTypes = {
-  bride: PropTypes.object.isRequired,
 };
 
 export default React.memo(ProfilMempelai);

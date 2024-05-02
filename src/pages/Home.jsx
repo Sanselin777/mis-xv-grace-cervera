@@ -23,10 +23,6 @@ const Home = () => {
         <Words />
       </section>
 
-      <section id="bride">
-        <Mempelai />
-      </section>
-
       <section id="date">
         <Date />
       </section>
@@ -35,7 +31,11 @@ const Home = () => {
         <Location />
       </section>
 
-      <section id="galeri">
+      <section id="bride">
+        <Mempelai />
+      </section>
+
+      <section id="galery">
         <Galeri />
       </section>
 

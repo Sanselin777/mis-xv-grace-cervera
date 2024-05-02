@@ -3,10 +3,11 @@ import { Box, Icon, IconButton, Tooltip } from "@mui/material";
 import { motion } from "framer-motion";
 import { transition } from "@/animation/transition";
 import HomeTwoToneIcon from "@mui/icons-material/HomeTwoTone";
-import FavoriteTwoToneIcon from "@mui/icons-material/FavoriteTwoTone";
 import CalendarMonthTwoToneIcon from "@mui/icons-material/CalendarMonthTwoTone";
 import LocationOnTwoToneIcon from "@mui/icons-material/LocationOnTwoTone";
 import CollectionsTwoToneIcon from "@mui/icons-material/CollectionsTwoTone";
+import CardGiftcardTwoToneIcon from "@mui/icons-material/CardGiftcardTwoTone";
+import PendingActionsTwoToneIcon from "@mui/icons-material/PendingActionsTwoTone";
 
 /**
  * Daftar link
@@ -15,29 +16,36 @@ import CollectionsTwoToneIcon from "@mui/icons-material/CollectionsTwoTone";
  */
 const links = [
   {
-    title: "Home",
+    title: "Inicio",
     elementId: "hero",
     IconMenu: ({ ...rest }) => <HomeTwoToneIcon {...rest} />,
   },
+
   {
-    title: "Mempelai",
-    elementId: "bride",
-    IconMenu: ({ ...rest }) => <FavoriteTwoToneIcon {...rest} />,
-  },
-  {
-    title: "Date",
+    title: "Fecha",
     elementId: "date",
     IconMenu: ({ ...rest }) => <CalendarMonthTwoToneIcon {...rest} />,
   },
   {
-    title: "Lokasi",
+    title: "Ubicación",
     elementId: "location",
     IconMenu: ({ ...rest }) => <LocationOnTwoToneIcon {...rest} />,
   },
   {
-    title: "Galeri",
-    elementId: "galeri",
+    title: "Obsequios",
+    elementId: "bride",
+    IconMenu: ({ ...rest }) => <CardGiftcardTwoToneIcon {...rest} />,
+  },
+
+  {
+    title: "Galeria",
+    elementId: "galery",
     IconMenu: ({ ...rest }) => <CollectionsTwoToneIcon {...rest} />,
+  },
+  {
+    title: "Confirmar",
+    elementId: "footer",
+    IconMenu: ({ ...rest }) => <PendingActionsTwoToneIcon {...rest} />,
   },
 ];
 

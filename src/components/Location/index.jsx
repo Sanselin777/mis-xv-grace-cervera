@@ -11,7 +11,7 @@ const Location = () => {
     <Box
       sx={{
         py: 15,
-        backgroundColor: "text.secondary",
+        backgroundColor: "background.default",
       }}
     >
       <Container>

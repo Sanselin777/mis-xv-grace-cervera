@@ -1,10 +1,20 @@
 import { parentVariants, transition } from "@/animation/transition";
 import useDB from "@/hooks/useDB";
 import FavoriteTwoToneIcon from "@mui/icons-material/FavoriteTwoTone";
-import { Box, Container, Divider, Grid, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  CardActions,
+  Container,
+  Divider,
+  Grid,
+  Typography,
+} from "@mui/material";
 import { motion } from "framer-motion";
 import TextMask from "../TextMask";
 import KeluargaBesar from "./KeluargaBesar";
+import { iconVariants } from "../Date/CardTanggal";
+import PendingActionsTwoToneIcon from "@mui/icons-material/PendingActionsTwoTone";
 
 /**
  * Text variant
@@ -53,6 +63,10 @@ const Footer = () => {
     "Doa Restu Anda merupakan karunia yang sangat berarti bagi kami.";
   const berbahagia = "Kami Yang Berbahagia";
 
+  const { title, message, warning, thanks, greetings, urlForm } = useDB(
+    (db) => db.party.confirmation
+  );
+
   return (
     <Box
       component={motion.div}
@@ -73,10 +87,10 @@ const Footer = () => {
         >
           <Grid item xs={12}>
             <Typography
-              variant="h4"
+              variant="h2"
               sx={{ textAlign: "center", fontFamily: "Arizonia" }}
             >
-              {doaRestu.split(" ").map((text, key) => (
+              {title.split(" ").map((text, key) => (
                 <TextMask key={key} variants={textVariants}>
                   {text}
                 </TextMask>
@@ -92,12 +106,29 @@ const Footer = () => {
             >
               <FavoriteTwoToneIcon sx={{ fontSize: 50 }} />
             </Divider>
-
+            <CardActions sx={{ p: 5 }}>
+              <Button
+                component={motion.a}
+                variants={iconVariants}
+                disableElevation
+                fullWidth
+                size="large"
+                variant="contained"
+                color="primary"
+                startIcon={<PendingActionsTwoToneIcon />}
+                href={urlForm}
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{ borderRadius: 10 }}
+              >
+                Confirmar Asistencia
+              </Button>
+            </CardActions>
             <Typography
-              variant="h2"
+              variant="h4"
               sx={{ textAlign: "center", fontFamily: "Arizonia" }}
             >
-              {berbahagia.split(" ").map((text, key) => (
+              {doaRestu.split(" ").map((text, key) => (
                 <TextMask key={key} variants={textVariants}>
                   {text}
                 </TextMask>

@@ -1,7 +1,7 @@
 import { parentVariants, transition } from "@/animation/transition";
 import useDB from "@/hooks/useDB";
 import { Box, Container, Divider, Grid, Typography } from "@mui/material";
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
 import TextMask from "../TextMask";
 import CardTanggal from "./CardTanggal";
 
@@ -45,10 +45,10 @@ const fotoVariants = {
  */
 const Date = () => {
   const textHeader = "Acompañanos a celebrar este día tan especial";
-  const { contract, reception, galery } = useDB((db) => db.party);
+  const { reception, galery } = useDB((db) => db.party);
 
   return (
-    <Container sx={{ py: 15 }}>
+    <Container sx={{ py: 15, backgroundColor: "text.primary" }}>
       <Grid container spacing={5}>
         <Grid
           item
@@ -60,7 +60,12 @@ const Date = () => {
           exit="exit"
           viewport={{ once: true }}
         >
-          <Typography variant="h6" component="div" sx={{ textAlign: "center" }}>
+          <Typography
+            color="text.secondary"
+            variant="h6"
+            component="div"
+            sx={{ textAlign: "center" }}
+          >
             {textHeader.split(" ").map((text, key) => (
               <TextMask key={key} variants={textVariants}>
                 {text}
@@ -68,7 +73,11 @@ const Date = () => {
             ))}
           </Typography>
 
-          <Typography variant="h2" sx={{ textAlign: "center", my: 3 }}>
+          <Typography
+            color="text.secondary"
+            variant="h2"
+            sx={{ textAlign: "center", my: 3 }}
+          >
             {reception.date.split(" ").map((text, key) => (
               <TextMask key={key} variants={textVariants}>
                 {text}
@@ -76,7 +85,7 @@ const Date = () => {
             ))}
           </Typography>
 
-          <Divider />
+          <Divider sx={{ borderColor: "text.secondary" }} />
         </Grid>
 
         <Grid item md={6} xs={12}>

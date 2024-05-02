@@ -9,11 +9,10 @@ import ProfilMempelai from "./ProfilMempelai";
  * @returns React.ReactElement
  */
 const Mempelai = () => {
-  const { woman, man } = useDB((db) => db.party.bride);
+  const { gifts } = useDB((db) => db.party);
   return (
     <Box>
-      <ProfilMempelai bride={man} />
-      <ProfilMempelai bride={woman} />
+      <ProfilMempelai info={gifts} />
     </Box>
   );
 };

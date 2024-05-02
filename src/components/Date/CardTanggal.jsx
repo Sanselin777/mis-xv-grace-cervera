@@ -57,7 +57,7 @@ const textVariants = {
 };
 
 // Icons variants
-const iconVariants = {
+export const iconVariants = {
   hidden: {
     opacity: 0,
   },
@@ -244,7 +244,7 @@ const CardTanggal = ({
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          sx={{ borderRadius: 0 }}
+          sx={{ borderRadius: 10 }}
         >
           Ir via Google Maps
         </Button>

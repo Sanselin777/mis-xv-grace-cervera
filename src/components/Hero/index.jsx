@@ -96,7 +96,7 @@ const Hero = () => {
           src={hero.banner}
           sx={{
             objectFit: "cover",
-            objectPosition: "bottom center",
+            objectPosition: "center center",
             width: "100%",
             height: "100vh",
           }}
