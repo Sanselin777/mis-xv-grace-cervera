@@ -1,0 +1,86 @@
+{
+  "application": {
+    "name": "Mis XV - Grace Cervera",
+    "description": "Mis XV - Grace Cervera. 01 de Junio, 2024",
+    "version": "1.0.0"
+  },
+  "party": {
+    "girl": {
+      "firstName": "Grace",
+      "lastName": "Cervera"
+    },
+    "father": {
+      "firstName": "Raúl",
+      "lastName": "Cervera"
+    },
+    "mother": {
+      "firstName": "Beatriz",
+      "lastName": "Hernández"
+    },
+    "galery": {
+      "date": "/assets/images/grace-ga-webp/03.webp"
+    },
+    "contract": {
+      "date": "Senin, 15 Mei 2023",
+      "hour": "08.00 WIB - Selesai",
+      "location": "Kediaman bride woman",
+      "address": "Jl. H. Nurleman RT. 002 RW. 003, Kel. Benda Baru, Kec. Pamulang, Tangerang Selatan",
+      "maps": {
+        "link": "https://maps.app.goo.gl/QnvcYHWXwU3wbLER8",
+        "iframeSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5985.8693217698765!2d-77.14892528318747!3d-11.875153682700176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d3a26b20024f%3A0xe76c50fd407651a2!2sHOTEL%20BUNGALOW%20JATUM%20MAMA!5e0!3m2!1ses-419!2spe!4v1714595632207!5m2!1ses-419!2spe"
+      }
+    },
+    "reception": {
+      "date": "01 de Junio, 2024",
+      "hour": "07:30 pm",
+      "location": "Local campestre Jatun Mama",
+      "address": "Av. La Playa mz.d Lt.7 Cooperativa Ecológica Apurimac, Ventanilla",
+      "maps": {
+        "link": "https://maps.app.goo.gl/QnvcYHWXwU3wbLER8",
+        "iframeSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5985.8693217698765!2d-77.14892528318747!3d-11.875153682700176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d3a26b20024f%3A0xe76c50fd407651a2!2sHOTEL%20BUNGALOW%20JATUM%20MAMA!5e0!3m2!1ses-419!2spe!4v1714595632207!5m2!1ses-419!2spe"
+      },
+      "secondaryMessage": "👗 👔 Elegante Te esperamos !!!",
+      "notKidsMessage": "Niños en pijamada descansado en casa ☺️"
+    },
+    "bride": {
+      "man": {
+        "firstName": "Saiful",
+        "lastName": "Akbar",
+        "nickname": "Ipul",
+        "parent": {
+          "information": "Putra ketiga dari keluarga",
+          "man": "H. Murdih bin Mahir",
+          "woman": "Mutiyah"
+        },
+        "foto": "/assets/images/grace-ga-webp/11.webp",
+        "bg": "rgb(229, 229, 203)"
+      },
+      "woman": {
+        "firstName": "Cindy",
+        "lastName": "Nadya",
+        "nickname": "Cindy",
+        "parent": {
+          "information": "Putri pertama dari keluarga",
+          "man": "Cecep Supriyadi",
+          "woman": "Yanih Nurliani"
+        },
+        "foto": "/assets/images/grace-ga-webp/01.webp",
+        "bg": "rgb(213, 206, 163)"
+      }
+    }
+  },
+  "hero": {
+    "banner": "/assets/images/grace-ga-webp/05.webp"
+  },
+  "galeri": [
+    "/assets/images/grace-ga-webp/01.webp",
+    "/assets/images/grace-ga-webp/02.webp",
+    "/assets/images/grace-ga-webp/04.webp",
+    "/assets/images/grace-ga-webp/05.webp",
+    "/assets/images/grace-ga-webp/06.webp",
+    "/assets/images/grace-ga-webp/07.webp",
+    "/assets/images/grace-ga-webp/08.webp",
+    "/assets/images/grace-ga-webp/09.webp",
+    "/assets/images/grace-ga-webp/12.webp"
+  ]
+}
