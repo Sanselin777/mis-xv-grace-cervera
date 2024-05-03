@@ -20,7 +20,7 @@
       "parent": "Madre de la quinceañera"
     },
     "galery": {
-      "date": "/assets/images/grace-ga-webp/03.webp"
+      "date": "/assets/images/grace-ga-principal/03.webp"
     },
     "reception": {
       "date": "Sábado 01 de Junio, 2024",
@@ -41,7 +41,7 @@
       "account2": "Mi número de cuenta interbancaria es 00230510088830706618",
       "accountOwner": "Beatriz Edelmira Hernández Rodríguez",
       "bg": "rgb(213, 206, 163)",
-      "picture": "/assets/images/grace-ga-webp/01.webp"
+      "picture": "/assets/images/grace-ga-principal/01.webp"
     },
     "confirmation": {
       "title": "Asistencia",
@@ -61,7 +61,7 @@
           "man": "H. Murdih bin Mahir",
           "woman": "Mutiyah"
         },
-        "foto": "/assets/images/grace-ga-webp/11.webp",
+        "foto": "/assets/images/grace-ga-principal/11.webp",
         "bg": "rgb(229, 229, 203)"
       },
       "woman": {
@@ -73,13 +73,13 @@
           "man": "Cecep Supriyadi",
           "woman": "Yanih Nurliani"
         },
-        "foto": "/assets/images/grace-ga-webp/01.webp",
+        "foto": "/assets/images/grace-ga-principal/01.webp",
         "bg": "rgb(213, 206, 163)"
       }
     }
   },
   "hero": {
-    "banner": "/assets/images/grace-ga-webp/05.webp"
+    "banner": "/assets/images/grace-ga-principal/05.webp"
   },
   "galeri": [
     "/assets/images/grace-ga-compress/01.webp",
