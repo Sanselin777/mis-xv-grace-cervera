@@ -11,7 +11,6 @@
 ## Instalation
 
 ```bash
-git clone https://github.com/saiful-akbar/my-party.git
 
 ```
 
